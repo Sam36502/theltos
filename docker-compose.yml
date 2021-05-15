@@ -1,0 +1,9 @@
+version: 3
+services:
+    theltos:
+        image: bismarck6502/theltos:latest
+    theltos-db:
+        image: mysql
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_ROOT_PASSWORD: ${DB_ROOT_PW}
