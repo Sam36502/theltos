@@ -1,0 +1,18 @@
+#
+#   MySQL Triggers:
+#
+#   Example:
+#
+#   CREATE TRIGGER upd_check BEFORE UPDATE ON account
+#      FOR EACH ROW
+#      BEGIN
+#          IF NEW.amount < 0 THEN
+#              SET NEW.amount = 0;
+#          ELSEIF NEW.amount > 100 THEN
+#              SET NEW.amount = 100;
+#          END IF;
+#      END;//
+
+delimiter //
+
+delimiter ;
